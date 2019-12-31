@@ -1,6 +1,12 @@
 $parallax-height: 100vh;
 $center-margin: 0px auto;
 
+@mixin background-size($size) {
+    background-size: $size;
+      -webkit-background-size: $size;
+      -moz-background-size: $size;
+      -o-background-size: $size;
+
 html,
 body {
   margin: 0;
