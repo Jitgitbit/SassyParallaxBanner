@@ -6,7 +6,12 @@ $center-margin: 0px auto;
       -webkit-background-size: $size;
       -moz-background-size: $size;
       -o-background-size: $size;
-
+  }
+@mixin parallax-background($file) {
+    background: url($file) no-repeat center center fixed;
+    @include background-size(cover);
+  }
+  
 html,
 body {
   margin: 0;
